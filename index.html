@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Teleport - Agents for everyone</title>
+  <title>Teleport - Agents in every app!</title>
   <style>
     /* Global Styles */
     body {
@@ -15,64 +15,94 @@
       animation: gradientBG 15s ease infinite;
       color: #fff;
     }
-    
+
     @keyframes gradientBG {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
-    
+
     .container {
       max-width: 800px;
       margin: 0 auto;
       padding: 100px 20px;
       text-align: center;
     }
-    
+
     h1 {
       font-size: 3em;
       margin-bottom: 20px;
     }
-    
+
     .founder {
       opacity: 0;
       transform: translateY(20px);
       transition: opacity 1s ease-out, transform 1s ease-out;
       margin: 40px 0;
     }
-    
+
     .founder.visible {
       opacity: 1;
       transform: translateY(0);
     }
-    
-    .founder h2 {
-      font-size: 2em;
-      margin: 0;
+
+    .founder a {
+      font-size: 1.8em;
+      color: #fff;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    
-    .founder p {
-      font-size: 1.2em;
-      margin: 5px 0 0;
+
+    .founder a:hover {
+      color: #fdbb2d;
+    }
+
+    .founder i {
+      font-size: 1.8em;
+      margin-right: 10px;
+    }
+
+    /* "Coming soon..." text animation */
+    .coming-soon {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      animation: dotAnimation 1s steps(3, end) infinite;
+    }
+
+    @keyframes dotAnimation {
+      0% { content: "Coming soon."; }
+      33% { content: "Coming soon.."; }
+      66% { content: "Coming soon..."; }
+      100% { content: "Coming soon."; }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Teleport - Agents in every app!</h1>
+    <div class="coming-soon">Coming soon...</div>
     <div class="founder" id="founder1">
-      <h2>Keyvan</h2>
-      <p>Arts of Games and Wars</p>
+      <a href="https://www.linkedin.com/in/keyvanmsadeghi" target="_blank">
+        <i class="fab fa-linkedin"></i> Keyvan
+      </a>
     </div>
     <div class="founder" id="founder2">
-      <h2>Marina</h2>
-      <p>Nurturing the Community</p>
+      <a href="https://www.linkedin.com/in/mknikolaou" target="_blank">
+        <i class="fab fa-linkedin"></i> Marina
+      </a>
     </div>
     <div class="founder" id="founder3">
-      <h2>Ramin</h2>
-      <p>Visions of the Future</p>
+      <a href="https://www.linkedin.com/in/ramin-barati" target="_blank">
+        <i class="fab fa-linkedin"></i> Ramin
+      </a>
     </div>
   </div>
+
+  <!-- FontAwesome for LinkedIn icon -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
   <script>
     // Fade-in effect on scroll
     function reveal() {
