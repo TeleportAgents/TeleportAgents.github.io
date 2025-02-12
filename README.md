@@ -1,7 +1,7 @@
 # Teleport
 
-Agents for every app!
+Agents in every app!
 
 Coming soon...
 
-Marina, Ramin, keyvan
+Marina, Ramin, Keyvan
